@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 MovieHub Explorer</title>
+    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <nav class="top-nav">
+    <h1 id="logo">MovieHub</h1>
+    
+       <div class="top-icons">
+          <button id="login-btn">Login</button>
+    <i class="fas fa-newspaper nav-item" id="news-nav"></i>
+    <i class="fas fa-heart" id="favorites-nav"></i>
+
+    <i class="fas fa-bookmark" id="watchlist-nav"></i>
+
+    <img
+        id="nav-avatar"
+        src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+        alt="Profile">
+</div>
+    <div id="news-container" style="display:none;"></div>
+</nav>
+
+    <div class="genres-container" id="genres">
+        <button class="genre-btn" data-id="28">Action</button>
+<button class="genre-btn" data-id="12">Adventure</button>
+<button class="genre-btn" data-id="16">Animation</button>
+<button class="genre-btn" data-id="35">Comedy</button>
+<button class="genre-btn" data-id="80">Crime</button>
+<button class="genre-btn" data-id="99">Documentary</button>
+<button class="genre-btn" data-id="18">Drama</button>
+<button class="genre-btn" data-id="10751">Family</button>
+<button class="genre-btn" data-id="14">Fantasy</button>
+<button class="genre-btn" data-id="36">History</button>
+<button class="genre-btn" data-id="27">Horror</button>
+<button class="genre-btn" data-id="10402">Music</button>
+<button class="genre-btn" data-id="9648">Mystery</button>
+<button class="genre-btn" data-id="10749">Romance</button>
+<button class="genre-btn" data-id="878">Science Fiction</button>
+<button class="genre-btn" data-id="10770">TV Movie</button>
+<button class="genre-btn" data-id="53">Thriller</button>
+<button class="genre-btn" data-id="10752">War</button>
+<button class="genre-btn" data-id="37">Western</button>
+    </div>
+    <div id="back-btn">
+    <i class="fas fa-arrow-left"></i>
+</div>
+
+  <div class="heading-row">
+    <div id="hero-banner" class="hero-banner">
+
+    <img id="banner-image" src="" alt="Banner">
+
+    <div class="banner-overlay">
+
+        <h1 id="banner-title"></h1>
+
+        <p id="banner-rating"></p>
+
+    </div>
+
+</div>
+
+    <h2 id="section-title">Trending Today</h2>
+    
+
+
+
+</div>
+
+<div id="movies"></div>
+
+<nav class="bottom-nav">
+    <div class="nav-item active" id="trending-nav">
+    <i class="fas fa-fire"></i>
+    <span>Trending</span>
+</div>
+
+<div class="nav-item" id="movies-nav">
+    <i class="fas fa-film"></i>
+    <span>Movies</span>
+</div>
+
+<div class="nav-item" id="tv-nav">
+    <i class="fas fa-tv"></i>
+    <span>TV Series</span>
+</div>
+
+<div class="nav-item" id="search-nav">
+    <i class="fas fa-search"></i>
+    <span>Search</span>
+</div>
+</div>
+</nav>
+
+<div id="search-popup" class="search-popup">
+    <div class="search-box">
+        <input
+            type="text"
+            id="popup-search"
+            placeholder="Search movies..."
+        >
+        <button id="close-search">✕</button>
+        
+    </div>
+</div>
+<div id="movie-popup" class="movie-popup">
+    <div class="popup-content">
+        <span id="close-popup">&times;</span>
+
+        <img id="popup-poster" src="" alt="Movie Poster">
+
+      <div class="popup-details">
+
+    <h2 id="popup-title"></h2>
+
+    <p id="popup-tagline"></p>
+
+    <p id="popup-rating"></p>
+
+    <p id="popup-overview"></p>
+
+    <h3>Cast Members</h3>
+
+    <div id="popup-cast"></div>
+
+    <button id="watch-trailer-btn">▶ WATCH TRAILER</button>
+    <div id="watch-providers">
+    <h3>Where to Watch</h3>
+    <div id="providers-list"></div>
+</div>
+
+</div>
+    </div>
+</div>
+
+<script src="movie.js"></script>
+</body>
+</html>
