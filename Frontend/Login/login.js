@@ -41,7 +41,7 @@ loginBtn.addEventListener("click", async () => {
 );
 
         alert("Login Successful");
-        window.location.href ="movie.html";
+        window.location.href ="../MovieDashboard/movie.html";
     } 
     catch (error) {
         console.error(error);
