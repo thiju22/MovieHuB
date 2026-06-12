@@ -6,14 +6,13 @@
     <title>Profile - MovieHub</title>
 
     <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    
     <a href="../MovieDashboard/movie.html" class="back-btn">
-    <i class="fas fa-arrow-left"></i> Back
-</a>
-
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
 
     <div class="profile-container">
 
@@ -29,43 +28,32 @@
             <button id="edit-profile">
                 ✏️ Edit Profile
             </button>
+            
             <div class="avatar-grid">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Robot" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Panda" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Lion" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Fox" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Cat" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Penguin" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Alien" class="avatar-option">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Dragon" class="avatar-option">
+            </div>
 
-    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Robot" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Panda" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Lion" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Fox" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Cat" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Penguin" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Alien" class="avatar-option">
-
-    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Dragon" class="avatar-option">
-
-</div>
-<p class="profile-subtitle">
-    Your personal MovieHub collection 🎬
-</p>
+            <p class="profile-subtitle">
+                Your personal MovieHub collection 🎬
+            </p>
 
         </div>
 
-
-
         <h2>My Watchlist</h2>
-
         <div id="watchlist-movies"></div>
 
         <h2>▶ Recently Watched Trailers</h2>
-
-            <div id="recent-trailers"></div>
+        <div id="recent-trailers"></div>
 
     </div>
-    <script src="profile.js"></script>
 
+    <script src="profile.js"></script>
 </body>
 </html>
