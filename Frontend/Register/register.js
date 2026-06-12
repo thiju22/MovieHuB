@@ -12,7 +12,7 @@ registerBtn.addEventListener("click", async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/auth/register",
+            "https://moviehub-z5xt.onrender.com/auth/register",
             {
                 method: "POST",
 

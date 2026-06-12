@@ -5,7 +5,7 @@ loginBtn.addEventListener("click", async () => {
   const password =document.getElementById("password").value;
   try {
     const response = await fetch(
-            "http://localhost:8080/auth/login",
+            "https://moviehub-z5xt.onrender.com/auth/login",
             {
                 method: "POST",
 

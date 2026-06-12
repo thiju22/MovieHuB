@@ -481,7 +481,7 @@ if (favoriteBtn.classList.contains("active")) {
     localStorage.getItem("email");
 
 fetch(
-    "http://localhost:8080/favorites/add",
+    "https://moviehub-z5xt.onrender.com/favorites/add",
     {
         method: "POST",
 
