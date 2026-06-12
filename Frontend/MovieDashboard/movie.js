@@ -461,7 +461,7 @@ document.addEventListener("click", (e) => {
 
     if(!token){
         alert("Please Login First");
-        window.location.href = "login.html";
+        window.location.href = "../Login/login.html";
         return;
     }
 
@@ -607,7 +607,7 @@ if(savedAvatar){
 }
 navAvatar.addEventListener("click", () => {
 
-    window.location.href = "profile.html";
+    window.location.href = "../Profile/profile.html";
 
 });
 setInterval(() => {
@@ -635,11 +635,11 @@ loginBtn.addEventListener("click", () => {
 
         alert("Logged Out Successfully");
 
-        window.location.href = "login.html";
+        window.location.href = "../Login/login.html";
 
     }else{
 
-        window.location.href = "login.html";
+        window.location.href = "../Login/login.html";
     }
 
 });
